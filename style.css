@@ -1,0 +1,704 @@
+
+/* Remove default spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar */
+header {
+    background-color: #ffffff;
+    padding: 20px 60px;
+}
+
+/* Hero Section */
+.hero {
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 60px 20px;
+
+    background: linear-gradient(
+        135deg,
+        #f5f2ff,
+        #e8e0ff
+    );
+}
+
+/* Hero Content */
+.hero-content {
+    max-width: 750px;
+}
+
+/* Features Section */
+.features {
+    padding: 100px 60px;
+    background-color: #ffffff;
+}
+
+/* Section Heading */
+.section-heading {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-tag {
+    color: #6c4ce4;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.section-heading h2 {
+    font-size: 38px;
+    color: #222222;
+    margin-bottom: 15px;
+}
+
+.section-heading > p:last-child {
+    color: #666666;
+    font-size: 16px;
+}
+
+/* Feature Cards Container */
+.features-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* Individual Card */
+.feature-card {
+    background-color: #f8f6ff;
+    padding: 35px 25px;
+    border-radius: 15px;
+    text-align: center;
+    transition: 0.3s ease;
+    border: 1px solid #eee9ff;
+}
+
+/* Card Icon */
+.feature-icon {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+/* Card Heading */
+.feature-card h3 {
+    font-size: 21px;
+    color: #222222;
+    margin-bottom: 15px;
+}
+
+/* Card Description */
+.feature-card p {
+    color: #666666;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+/* Card Hover Effect */
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(108, 76, 228, 0.12);
+}
+
+/* About Section */
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    padding: 100px 60px;
+    background-color: #f8f6ff;
+}
+
+/* About Content */
+.about-content {
+    flex: 1;
+    max-width: 550px;
+}
+
+.about-content h2 {
+    font-size: 38px;
+    color: #222222;
+    margin: 15px 0 20px;
+}
+
+.about-content p {
+    color: #666666;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+/* About Button */
+.about-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 13px 28px;
+    background-color: #6c4ce4;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s ease;
+}
+
+.about-btn:hover {
+    background-color: #5032bd;
+    transform: translateY(-3px);
+}
+
+/* About Visual */
+.about-visual {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+}
+
+.about-box {
+    width: 100%;
+    max-width: 350px;
+    padding: 55px 30px;
+    text-align: center;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 35px rgba(108, 76, 228, 0.12);
+}
+
+.about-box span {
+    font-size: 65px;
+}
+
+.about-box h3 {
+    font-size: 25px;
+    margin: 20px 0 10px;
+    color: #222222;
+}
+
+.about-box p {
+    color: #666666;
+    line-height: 1.6;
+}
+
+/* Testimonials Section */
+.testimonials {
+    padding: 100px 60px;
+    background-color: #f8f6ff;
+}
+
+/* Testimonials Container */
+.testimonial-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* Testimonial Card */
+.testimonial-card {
+    background-color: white;
+    padding: 35px 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    transition: 0.3s ease;
+}
+
+/* Stars */
+.stars {
+    color: #f5a623;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+/* Testimonial Text */
+.testimonial-card p {
+    color: #555555;
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+/* User Name */
+.testimonial-card h3 {
+    color: #222222;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+/* User Role */
+.testimonial-card span {
+    color: #888888;
+    font-size: 14px;
+}
+
+/* Hover Effect */
+.testimonial-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(108, 76, 228, 0.12);
+}
+
+/* Contact Section */
+.contact {
+    padding: 100px 20px;
+    background-color: #ffffff;
+}
+
+/* Contact Container */
+.contact-container {
+    max-width: 600px;
+    margin: auto;
+}
+
+/* Contact Form */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Input Fields */
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: inherit;
+    outline: none;
+    transition: 0.3s ease;
+}
+
+/* Input Focus */
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #6c4ce4;
+    box-shadow: 0 0 5px rgba(108, 76, 228, 0.2);
+}
+
+/* Textarea */
+.contact-form textarea {
+    resize: vertical;
+}
+
+/* Submit Button */
+.contact-form button {
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: #6c4ce4;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #5032bd;
+    transform: translateY(-3px);
+}
+
+/* Footer */
+.footer {
+    background-color: #211a38;
+    color: white;
+    text-align: center;
+    padding: 50px 20px 25px;
+}
+
+.footer-content h2 {
+    color: #a995ff;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.footer-content p {
+    color: #cccccc;
+    margin-bottom: 25px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-bottom: 30px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #a995ff;
+}
+
+.copyright {
+    color: #aaaaaa;
+    font-size: 14px;
+    border-top: 1px solid #453d59;
+    padding-top: 20px;
+}
+
+
+/* Small Tag */
+.hero-tag {
+    color: #6c4ce4;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+/* Main Heading */
+.hero h1 {
+    font-size: 60px;
+    line-height: 1.2;
+    color: #222222;
+    margin-bottom: 20px;
+}
+
+/* Description */
+.hero-description {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #555555;
+    margin-bottom: 30px;
+}
+
+/* Button */
+.hero-btn {
+    display: inline-block;
+    background-color: #6c4ce4;
+    color: white;
+    padding: 14px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+/* Button Hover */
+.hero-btn:hover {
+    background-color: #5032bd;
+    transform: translateY(-3px);
+}
+
+
+/* Navigation container */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo */
+.logo {
+    font-size: 28px;
+    color: #6c4ce4;
+}
+
+/* Navigation links */
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+/* Individual links */
+nav ul li a {
+    text-decoration: none;
+    color: #333333;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+/* Hover effect */
+nav ul li a:hover {
+    color: #6c4ce4;
+}
+
+
+
+
+/* =========================
+   TABLET RESPONSIVENESS
+========================= */
+
+@media (max-width: 768px) {
+
+    /* Navbar */
+    header {
+        padding: 20px 25px;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav ul {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    /* Hero */
+    .hero {
+        min-height: 70vh;
+        padding: 60px 25px;
+    }
+
+    .hero h1 {
+        font-size: 45px;
+    }
+
+    /* Features */
+    .features,
+    .testimonials {
+        padding: 70px 25px;
+    }
+
+    .features-container,
+    .testimonial-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* About */
+    .about {
+        flex-direction: column;
+        padding: 70px 25px;
+        gap: 35px;
+    }
+
+    .about-content {
+        max-width: 100%;
+    }
+
+    .about-visual {
+        width: 100%;
+    }
+
+    /* Contact */
+    .contact {
+        padding: 70px 25px;
+    }
+}
+
+
+/* =========================
+   MOBILE RESPONSIVENESS
+========================= */
+
+@media (max-width: 480px) {
+
+    /* Navbar */
+    header {
+        padding: 18px 15px;
+    }
+
+    nav ul {
+        gap: 12px;
+    }
+
+    nav ul li a {
+        font-size: 13px;
+    }
+
+    /* Hero */
+    .hero {
+        min-height: 65vh;
+        padding: 50px 18px;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .hero-description {
+        font-size: 15px;
+    }
+
+    /* Section Headings */
+    .section-heading h2,
+    .about-content h2 {
+        font-size: 29px;
+    }
+
+    .section-heading > p:last-child {
+        font-size: 14px;
+    }
+
+    /* Features */
+    .features,
+    .testimonials {
+        padding: 60px 18px;
+    }
+
+    .features-container,
+    .testimonial-container {
+        grid-template-columns: 1fr;
+    }
+
+    .feature-card,
+    .testimonial-card {
+        padding: 28px 20px;
+    }
+
+    /* About */
+    .about {
+        padding: 60px 18px;
+    }
+
+    .about-box {
+        padding: 40px 20px;
+    }
+
+    /* Contact */
+    .contact {
+        padding: 60px 18px;
+    }
+
+    /* Footer */
+    .footer-links {
+        gap: 15px;
+    }
+
+    .footer-links a {
+        font-size: 14px;
+    }
+}
+
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+/* Scroll Reveal Animation */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+/* Dark Mode Button */
+
+.theme-toggle {
+    background-color: #6c4ce4;
+    color: white;
+    border: none;
+    padding: 7px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: 0.3s ease;
+    white-space: nowrap;
+}
+
+.theme-toggle:hover {
+    background-color: #5032bd;
+}
+
+
+/* Dark Mode Theme */
+body.dark-mode {
+    background-color: #151323;
+    color: #ffffff;
+}
+
+body.dark-mode header,
+body.dark-mode .contact {
+    background-color: #201d32;
+}
+
+body.dark-mode .hero {
+    background: linear-gradient(135deg, #211a38, #30244d);
+}
+
+body.dark-mode .features,
+body.dark-mode .testimonials,
+body.dark-mode .about {
+    background-color: #19162a;
+}
+
+body.dark-mode .feature-card,
+body.dark-mode .testimonial-card,
+body.dark-mode .about-box {
+    background-color: #29243e;
+    border-color: #40375c;
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode .feature-card h3,
+body.dark-mode .testimonial-card h3,
+body.dark-mode .about-box h3 {
+    color: #ffffff;
+}
+
+body.dark-mode p,
+body.dark-mode .feature-card p,
+body.dark-mode .testimonial-card p,
+body.dark-mode .about-content p,
+body.dark-mode .about-box p {
+    color: #cccccc;
+}
+
+body.dark-mode nav ul li a {
+    color: #ffffff;
+}
+
+body.dark-mode .contact-form input,
+body.dark-mode .contact-form textarea {
+    background-color: #29243e;
+    color: white;
+    border-color: #51466e;
+}
+
+body.dark-mode .contact-form input::placeholder,
+body.dark-mode .contact-form textarea::placeholder {
+    color: #bbbbbb;
+}
+
+body.dark-mode .footer {
+    background-color: #100e1c;
+}
+
+/* Smooth theme transition */
+body,
+header,
+.hero,
+.features,
+.about,
+.testimonials,
+.contact,
+.feature-card,
+.testimonial-card,
+.about-box {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
